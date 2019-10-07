@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+
+.app__logo{
+    font-size:2rem;
+    margin: 2rem auto;
+}
+
+.app__sidebar{
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+}
+
+.side-nav__link{
+    color: #fff;
+    text-decoration: none;
+    display:block;
+    font-size: 1.4rem;
+    padding:0.5rem 0.2rem;
+}
+
+.sticky{
+    position:sticky;
+    top: 10px;
+}
+
+/* MAIN AREA */
+
+.app__main{
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(168, 129, 55), rgb(102, 69, 27));
+    padding-bottom: 150px;
+}
+
+hr { 
+    padding: 20px 0;
+    border: 0; 
+    height: 1px; 
+     
+  }
+
+/* GRID LIST */
+
+
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid-list__item {
+    padding: 2rem;
+    background-color: orange;
+    color: #fff;
+    font-size: 2rem;
+    border:2px solid darkorange;
+    min-height: 200px;
+}
+
+
+.grid-list img{
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* CONTROLS AREA */
+
+.app__controls{
+    background: #222;
+    color:#fff;
+    padding: 2rem;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width: 100%; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+
+}
+
+.control-btn{
+    width: 55px;
+    height: 55px;
+    color:transparent;
+    background: url(./icons/play.svg) no-repeat center;
+    background-size: 55px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+
+.control-btn--pause{
+    width: 55px;
+    height: 55px;
+    color:transparent;
+    background: url(./icons/pause.svg) no-repeat center;
+    background-size: 55px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
